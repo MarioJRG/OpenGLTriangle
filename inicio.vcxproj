@@ -151,7 +151,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="scr\indexBuffer.cpp" />
     <ClCompile Include="scr\main.cpp" />
+    <ClCompile Include="scr\Renderer.cpp" />
+    <ClCompile Include="scr\Shader.cpp" />
+    <ClCompile Include="scr\vertexArray.cpp" />
+    <ClCompile Include="scr\vertexBuffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Shader\Shader.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scr\indexBuffer.h" />
+    <ClInclude Include="scr\Renderer.h" />
+    <ClInclude Include="scr\Shader.h" />
+    <ClInclude Include="scr\vertexArray.h" />
+    <ClInclude Include="scr\vertexBuffer.h" />
+    <ClInclude Include="scr\vertexBufferLayout.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
