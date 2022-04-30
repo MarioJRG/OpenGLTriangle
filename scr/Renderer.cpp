@@ -13,3 +13,24 @@ bool GlLogCall(const char* funtion, const char* file, int line) {
     }
     return true;
 }
+
+void Renderer::Draw(const vertexArray& va, const indexBuffer& ib, const Shader& shader) const
+{
+    shader.Bind();
+ 
+
+
+
+    //glBindVertexArray(vao);
+    va.Bind();
+    ib.Bind();
+
+
+    //dive 
+    glDrawElements(GL_TRIANGLES, ib.getCount(), GL_UNSIGNED_INT, nullptr);
+}
+
+void Renderer::Clean() const
+{
+    glClear(GL_COLOR_BUFFER_BIT);
+}
